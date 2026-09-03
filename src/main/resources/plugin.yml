@@ -1,0 +1,25 @@
+name: Censor
+version: 1.0.0-beta.1
+main: com.sythel.censor.Censor
+description: Minecraft sunucuları için sansür eklentisi.
+author: sythel
+api-version: '1.21.4'
+
+commands:
+  censor:
+    description: Censor yönetim komutu.
+    usage: /censor <reload|logs|test>
+    permission: censor.admin
+
+permissions:
+  censor.admin:
+    description: Censor yönetim komutlarını kullanma yetkisi.
+    default: op
+
+  censor.notify:
+    description: Sansürlenen mesaj bildirimlerini alma yetkisi.
+    default: op
+
+  censor.bypass:
+    description: Censor filtrelerinden muaf olma yetkisi.
+    default: op

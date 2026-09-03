@@ -1,0 +1,16 @@
+filters:
+  words:
+    enabled: true # Yasaklı kelime filtresi
+  urls:
+    enabled: true # URL/link filtresi
+  advertisements:
+    enabled: true # Reklam filtresi
+
+replacement: "***" # Sansürlenen içerik yerine gösterilecek ifade
+
+notify-staff: true # Sansürlenen mesajları yetkili personele bildir
+staff-permission: "censor.notify" # Bildirimleri alacak yetki
+
+logging:
+  enabled: true # Sansür kayıtlarını tut
+  storage: "sqlite" # Kayıt depolama yöntemi: yaml veya sqlite
